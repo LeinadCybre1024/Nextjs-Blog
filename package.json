@@ -1,15 +1,18 @@
 {
   "private": true,
   "scripts": {
+    "dev": "node server.js",
     "build": "next build",
-    "dev": "next dev",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^15.0.2"
   },
   "engines": {
     "node": ">=18"
